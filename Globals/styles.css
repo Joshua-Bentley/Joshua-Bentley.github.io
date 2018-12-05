@@ -11,7 +11,12 @@ body {
 header {
     padding: 80px;
     text-align: center;
-    background: grey;
+    background-image: url("https://images.pexels.com/photos/14676/pexels-photo-14676.png?cs=srgb&dl=black-wallpaper-dark-galaxy-14676.jpg&fm=jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
     color: white;
 }
 
@@ -132,5 +137,12 @@ footer {
     }
     header h3 {
       font-size: 18px;
+    }
+    header {
+      background-image: url("https://www.publicdomainpictures.net/pictures/130000/nahled/black-bold-mosaic-wallpaper.jpg");
+      background-attachment: fixed;
+      background-position: cover;
+      background-repeat: no-repeat;
+      color: white;
     }
 }
