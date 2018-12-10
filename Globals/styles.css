@@ -86,6 +86,10 @@ header h3 {
   transition: 0.3s;
 }
 
+a#navicon {
+  display: none;
+}
+
 /* Styles for Columns and Rows */
 
 .row {
@@ -169,4 +173,18 @@ footer {
       background-repeat: no-repeat;
       color: white;
     }
+
+    a#navicon {
+      display: block;
+      text-align: right;
+    }
+
+    nav ul {
+      display: none;
+    }
+
+    a#navicon:hover+ul, nav ul:hover {
+      display: block;
+    }
+
 }
