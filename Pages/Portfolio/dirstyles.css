@@ -1,27 +1,33 @@
+/* Default Styles, make sure HTML is ready */
+
 html {
   box-sizing: border-box;
+  background-color: rgb(255, 241, 224);
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+/* Cards and Basic Layout */
+
 .column {
   float: left;
   width: 33.3%;
+  margin-top: 16px;
   margin-bottom: 16px;
   padding: 0 8px;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px 0 steelblue;
+  transition: 0.3s;
 }
 
 .container {
@@ -34,27 +40,95 @@ html {
   display: table;
 }
 
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
 a {
   text-decoration: none;
   color: black;
+}
+
+p a {
+  transition: 0.3s;
+}
+
+p a:last-of-type:hover {
+  color: hotpink;
+  transition: 0.3s;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+div.container p {
+  padding-bottom: 1%;
+}
+
+/* Images for each specific card */
+
+#eduimg {
+  background-image: url("https://s3.amazonaws.com/treehouse-content/uploads/blog/1384/medium/untitled-design_1526411176.png");
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#devimg {
+  background-image: url("https://39hwra47nlyu11cw9c40ez6v-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/pexels-photo-270404-1240x696.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#gaaimg {
+  background-image: url("./artwork.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#mavimg {
+  background-image: url("https://cdn.pixabay.com/photo/2016/05/05/21/40/music-1374856_960_720.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#prpimg {
+  background-image: url("https://c1.staticflickr.com/8/7257/7422258936_bb5416b584_b.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#lvsimg {
+  background-image: url("https://cdn.pixabay.com/photo/2017/03/12/00/27/background-2136168_960_720.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* Makes sure the page can be responsive */
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
