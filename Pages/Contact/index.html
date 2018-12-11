@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../Globals/reset.css" media="all" />
     <link rel="stylesheet" href="../../Globals/styles.css" media="screen" />
+    <link rel="stylesheet" href="./dirstyles.css" media="screen" />
     <link rel="stylesheet" href="../../Globals/print.css" media="print" />
   </head>
   <body>
@@ -28,9 +29,67 @@
       </ul>
     </nav>
     <div class="row">
-      <article class="container">
-
-      </article>
+      <div class="container">
+        <div class="row">
+          <div id="col1" class="column mobileHiddenRL">
+            <!-- Image Sourced Labeled for Reuse from: https://pixabay.com/p-1462755/?no_redirect -->
+            <img id="contactimg" style="width:100%" class="parallax" style="">
+          </div>
+          <div id="col2" class="column">
+            <h1 style="font-size: 1.5em;">Contact Form</h1>
+            <p style="line-height: 1.5em;">Fill out the following information and then hit submit to send me an email!</p>
+            <form action="./mail.php" method="POST">
+                <!-- Name -->
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="Insert your full name, alias, or company here...">
+                <!-- Email -->
+                <label for="email">Email</label>
+                <input id="email" type="text" name="email" placeholder="someone@example.com">
+                <!-- Phone -->
+                <label for="phone">Phone</label>
+                <input id="phone" type="text" name="phone" placeholder="1-800-999-9999">
+                <!-- Country -->
+                <label for="country">Country / Region</label>
+                <select id="country" name="country">
+                  <option value="usa">USA</option>
+                  <option value="canada">Canada</option>
+                  <option value="mexico">Mexico</option>
+                  <option value="europe">Europe</option>
+                  <option value="southamerica">South America</option>
+                  <option value="asia">Asia</option>
+                  <option value="australia">Australia</option>
+                </select>
+                <!-- Priority -->
+                <label for="priority">Email Priority</label>
+                <select id="priority" name="priority" size="1">
+                    <option value="Low">Low</option>
+                    <option value="Normal">Normal</option>
+                    <option value="High">High</option>
+                    <option value="Emergency">Emergency</option>
+                </select>
+                <!-- Type -->
+                <label for="type">Email Type</label>
+                <select id="type" name="type" size="1">
+                    <option value="inquiry">Business Inquiry</option>
+                    <option value="inquiry">Educational Inquiry</option>
+                    <option value="commission">Custom Commission</option>
+                    <option value="information">Information Required</option>
+                    <option value="copyright">Copyright Infringement</option>
+                    <option value="report">Bug Report</option>
+                    <option value="other">Other</option>
+                </select>
+                <!-- Message -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" cols="25" placeholder="Your message here..."></textarea>
+                <input type="submit" value="Send"><input type="reset" value="Clear">
+            </form>
+          </div>
+          <div id="col3" class="column mobileHiddenRL">
+            <!-- Image Sourced Labeled for Reuse from: https://pixabay.com/p-1462755/?no_redirect -->
+            <img id="contactimg" style="width:100%" class="parallax" style="">
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <h2>Copyright &copy; 2018 Joshua Bentley</h2>

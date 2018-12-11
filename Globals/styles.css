@@ -125,6 +125,17 @@ footer {
     padding: 20px;
 }
 
+/* Google Translate Button Style */
+
+select {
+  padding: 12px;
+  border: 1px solid #b7b7b7;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  text-align: center;
+  resize: vertical;
+}
+
 /*
 
       Responsive layout
@@ -158,6 +169,9 @@ footer {
       thrown at us. (ㆆ_ㆆ)
       */
     }
+    .mobileHiddenRL {
+      display: none;
+    }
     .navbar a {
         float: none;
         width: 100%;
@@ -187,4 +201,10 @@ footer {
       display: block;
     }
 
+}
+
+@media screen and (min-width: 460px) {
+  .desktopHiddenRL {
+    display: none;
+  }
 }

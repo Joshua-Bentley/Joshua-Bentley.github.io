@@ -1,0 +1,109 @@
+
+/* Inner Container Layout (Only here because its page-specific) */
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 100%;
+}
+
+.column {
+  float: left;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#col1 {
+  width: 12%;
+}
+
+#col2 {
+  width: 50%;
+  border: 1px solid #ccc;
+}
+
+#col3 {
+  width: 38%;
+}
+
+/* Style Form Inputs */
+
+div.container input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+div.container input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+div.container input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.container input[type=reset] {
+  background-color: #af4c4c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+div.container input[type=reset]:hover {
+  background-color: #a04545;
+}
+
+/* Parallax Backgrounds */
+
+#contactimg {
+  background-image: url("https://cdn.pixabay.com/photo/2016/06/17/06/04/background-1462755_960_720.jpg");
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* Google Translate Element(s) Styling */
+
+footer div#google_translate_element {
+  margin: auto;
+  width: 12%;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  #col2 {
+    width: 100%;
+  }
+  .column, div.container input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .column, div.container input[type=reset] {
+    width: 100%;
+    margin-top: 0;
+  }
+  footer div#google_translate_element {
+    margin: auto;
+    width: 50%;
+  }
+}
