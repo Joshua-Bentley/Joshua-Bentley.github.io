@@ -1,0 +1,141 @@
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding: 3px;
+  color: white;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+div.row .active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  border: 1px solid #ccc;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+div.row .active:after {
+  content: "\2796";
+}
+
+/* Web Development Bars */
+
+.web {
+  width: 97%;
+  background-color: #CC3366;
+  transition: 0.3s;
+}
+
+.html {
+  width: 95%;
+  background-color: #33CCFF;
+  transition: 0.3s;
+}
+
+.css {
+  width: 90%;
+  background-color: #2196F3;
+  transition: 0.3s;
+}
+
+.js {
+  width: 40%;
+  background-color: #f44336;
+  transition: 0.3s;
+}
+
+.php {
+  width: 30%;
+  background-color: #CC6633;
+  transition: 0.3s;
+}
+
+
+/* Computer Programing Bars */
+
+.comp {
+  width: 77%;
+  background-color: #CC3366;
+  transition: 0.3s;
+}
+
+.cpp {
+  width: 75%;
+  background-color: #33CCFF;
+  transition: 0.3s;
+}
+
+.c {
+  width: 10%;
+  background-color: #0066CC;
+  transition: 0.3s;
+}
+
+.python {
+  width: 80%;
+  background-color: #CC6633;
+  transition: 0.3s;
+}
+
+
+/* Graphic Arts Bars */
+
+.graphic {
+  width: 88%;
+  background-color: #CC3366;
+  transition: 0.3s;
+}
+
+.webdesign {
+  width: 95%;
+  background-color: #33CCFF;
+  transition: 0.3s;
+}
+
+.logodesign {
+  width: 90%;
+  background-color: #0066CC;
+  transition: 0.3s;
+}
+
+.animation {
+  width: 60%;
+  background-color: #f44336;
+  transition: 0.3s;
+}
+
+.addesign {
+  width: 55%;
+  background-color: #CC6633;
+  transition: 0.3s;
+}

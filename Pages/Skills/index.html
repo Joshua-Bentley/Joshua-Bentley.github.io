@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../reset.css" media="all" />
     <link rel="stylesheet" href="../../styles.css" media="screen" />
+    <link rel="stylesheet" href="./dirstyles.css" media="screen" />
     <link rel="stylesheet" href="../../print.css" media="print" />
   </head>
   <body>
@@ -28,8 +29,161 @@
       </ul>
     </nav>
     <div class="row">
-      <article class="container">
+      <article>
+        <h1 style="font-size: 1.5em;">My Skills</h1>
+        <p style="line-height: 1.5em;">
 
+        </p>
+        <button class="accordion">Web Development Skills</button>
+        <div class="panel">
+          <div style="padding: 2%;">
+            <h2>General Web Development Skill</h2>
+            <div class="container">
+              <div class="skills web">97%</div>
+            </div>
+            <p>HTML</p>
+            <div class="container">
+              <div class="skills html">95%</div>
+            </div>
+            <p>CSS</p>
+            <div class="container">
+              <div class="skills css">90%</div>
+            </div>
+            <p>JavaScript</p>
+            <div class="container">
+              <div class="skills js">40%</div>
+            </div>
+            <p>PHP</p>
+            <div class="container">
+              <div class="skills php">30%</div>
+            </div>
+          </div>
+        </div>
+        <button class="accordion">Computer Programing Skills</button>
+        <div class="panel">
+          <div style="padding: 2%;">
+            <h2>Computer Programing Skill</h2>
+            <div class="container">
+              <div class="skills comp">77%</div>
+            </div>
+            <p>C++</p>
+            <div class="container">
+              <div class="skills cpp">75%</div>
+            </div>
+            <p>C</p>
+            <div class="container">
+              <div class="skills c">10%</div>
+            </div>
+            <p>JavaScript</p>
+            <div class="container">
+              <div class="skills js">40%</div>
+            </div>
+            <p>Python</p>
+            <div class="container">
+              <div class="skills python">80%</div>
+            </div>
+          </div>
+        </div>
+        <button class="accordion">Opperating System, and Server Knowledge</button>
+        <div class="panel">
+          <div style="padding: 2%;">
+            <h2>Computer Programing Skill</h2>
+            <div class="container">
+              <div class="skills comp">77%</div>
+            </div>
+            <p>C++</p>
+            <div class="container">
+              <div class="skills cpp">75%</div>
+            </div>
+            <p>C</p>
+            <div class="container">
+              <div class="skills c">10%</div>
+            </div>
+            <p>JavaScript</p>
+            <div class="container">
+              <div class="skills js">40%</div>
+            </div>
+            <p>Python</p>
+            <div class="container">
+              <div class="skills python">80%</div>
+            </div>
+          </div>
+        </div>
+        <button class="accordion">Graphic Arts Skills</button>
+        <div class="panel">
+          <div style="padding: 2%;">
+            <h2>Graphic Arts Skill</h2>
+            <div class="container">
+              <div class="skills graphic">88%</div>
+            </div>
+            <p>Web Design</p>
+            <div class="container">
+              <div class="skills webdesign">95%</div>
+            </div>
+            <p>Logo & Page Design</p>
+            <div class="container">
+              <div class="skills logodesign">90%</div>
+            </div>
+            <p>Animation</p>
+            <div class="container">
+              <div class="skills animation">60%</div>
+            </div>
+            <p>Advertisment Design</p>
+            <div class="container">
+              <div class="skills addesign">55%</div>
+            </div>
+          </div>
+        </div>
+        <button class="accordion">Office Based Technology Skills</button>
+        <div class="panel">
+          <div style="padding: 2%;">
+            <h2>Graphic Arts Skill</h2>
+            <div class="container">
+              <div class="skills graphic">88%</div>
+            </div>
+            <p>Web Design</p>
+            <div class="container">
+              <div class="skills webdesign">95%</div>
+            </div>
+            <p>Logo & Page Design</p>
+            <div class="container">
+              <div class="skills logodesign">90%</div>
+            </div>
+            <p>Animation</p>
+            <div class="container">
+              <div class="skills animation">60%</div>
+            </div>
+            <p>Advertisment Design</p>
+            <div class="container">
+              <div class="skills addesign">55%</div>
+            </div>
+          </div>
+        </div>
+        <button class="accordion">Trade Skills</button>
+        <div class="panel">
+          <div style="padding: 2%;">
+            <h2>Graphic Arts Skill</h2>
+            <div class="container">
+              <div class="skills graphic">88%</div>
+            </div>
+            <p>Web Design</p>
+            <div class="container">
+              <div class="skills webdesign">95%</div>
+            </div>
+            <p>Logo & Page Design</p>
+            <div class="container">
+              <div class="skills logodesign">90%</div>
+            </div>
+            <p>Animation</p>
+            <div class="container">
+              <div class="skills animation">60%</div>
+            </div>
+            <p>Advertisment Design</p>
+            <div class="container">
+              <div class="skills addesign">55%</div>
+            </div>
+          </div>
+        </div>
       </article>
     </div>
     <footer>
@@ -40,6 +194,22 @@
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script  type="text/javascript">
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
     }
   </script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
