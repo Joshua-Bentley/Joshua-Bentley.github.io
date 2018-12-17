@@ -1,0 +1,78 @@
+/* Table Styles */
+table {
+  background: white;
+  border-collapse: collapse;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Table Cell Styles */
+table th, table td {
+  border: 1px solid grey;
+  padding: 5px;
+  vertical-align: middle;
+  transition: 0.3s;
+}
+
+table tbody th:hover, table tbody td:hover {
+  background-color: skyblue;
+  box-shadow: inset 0px 0px 10px black;
+}
+
+table a:hover {
+  color: gray;
+}
+
+/* Table Caption Styles */
+table caption {
+  caption-side: bottom;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
+
+/* Row Group Styles */
+table thead {
+  background-color: black;
+  color: white;
+}
+
+table tfoot {
+  text-align: center;
+  font-weight: bold;
+  background-color: #333;
+  box-shadow: inset 0px 0px 20px black;
+  color: white;
+  transition: 0.3s;
+}
+
+table thead tr {
+  height: 30px;
+}
+
+table tbody tr {
+  height: 40px;
+}
+
+
+
+
+/* Mobile Styles */
+
+@media screen and (max-width: 460px) {
+  table {
+    margin-top: 1%;
+  }
+  table caption {
+    caption-side: top;
+    background-color: #333;
+    box-shadow: inset 0px 0px 20px black;
+    color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+}

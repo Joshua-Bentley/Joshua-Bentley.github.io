@@ -1,0 +1,58 @@
+body, html {
+  height: 100%;
+  background-color: rgb(254, 240, 223);
+  overflow-x: hidden;
+}
+
+.homebar {
+  width: 90%;
+  padding: 1%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background-color: rgb(254, 240, 223);
+}
+
+h1 {
+  font-size: 2em;
+  font-family: cursive;
+}
+
+p {
+  padding: .5%;
+}
+
+div.row a {
+  padding: 1%;
+  background-color: #ccc;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: 0.3s;
+}
+
+div.row a:hover {
+  padding: 1%;
+  background-color: gray;
+  color: white;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: 0.3s;
+}
+
+.parallax {
+  background-image: url('https://images.pexels.com/photos/14676/pexels-photo-14676.png?cs=srgb&dl=black-wallpaper-dark-galaxy-14676.jpg&fm=jpg');
+}
+
+@media screen and (max-width: 460px) {
+  .homebar {
+    padding: 3%;
+  }
+  div.row a {
+    padding: 5%;
+  }
+}

@@ -1,5 +1,11 @@
 * {box-sizing: border-box}
 
+.homebar {
+  text-align: center;
+  width: 100%;
+  height: 15%;
+}
+
 .container {
   width: 100%;
   background-color: #ddd;
