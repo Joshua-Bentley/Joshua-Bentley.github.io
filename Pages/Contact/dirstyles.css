@@ -73,7 +73,7 @@ div.container input[type=reset]:hover {
 /* Parallax Backgrounds */
 
 #contactimg {
-  background-image: url("https://cdn.pixabay.com/photo/2016/06/17/06/04/background-1462755_960_720.jpg");
+  background-image: url("./background.jpg");
   background-attachment: fixed;
   background-position: left;
   background-repeat: no-repeat;
